@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ImageClassifier</title>
+</head>
+<body class="container">
+{% if data['filename'] %}
+    <div>
+        <img src="{{'/display/'+data['filename']}}">
+        <p>The uploaded image is predicted to be {{data['prediction']}}</p>
+    </div>
+{% else %}
+    <div>
+        <p>Image prediction results are not available</p>
+    </div>
+{% endif %}
+</body>
+</html>
