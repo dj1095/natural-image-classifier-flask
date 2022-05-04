@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>ImageClassifier</title>
+    <style>
+    .w3-container {
+    margin: 3rem;
+    background-color:cornsilk;
+    text-align: center;
+   }
+   img{
+   display:inline;
+   padding:.5rem
+   }
+    </style>
 </head>
 <body class="container">
 {% if data['filename'] %}
     <div>
         <img src="{{'/display/'+data['filename']}}">
-        <p>The uploaded image is predicted to be {{data['prediction']}}</p>
+        <p>The uploaded image is predicted to be <strong>{{data['prediction']}}</strong></p>
     </div>
 {% else %}
     <div>

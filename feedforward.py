@@ -55,6 +55,8 @@ testing_transforms = transforms.Compose([transforms.Resize(175),
 batch_size = 8
 learning_rate = 0.001
 
+num_of_epochs = 10
+
 traindataset = datasets.ImageFolder('./output/train', transform=training_transforms)
 trainloader = torch.utils.data.DataLoader(traindataset, batch_size=batch_size, shuffle=True)
 
@@ -75,7 +77,6 @@ optimizer = optim.Adam(model1.parameters(), lr=learning_rate)
 
 # Train The Model
 
-num_of_epochs = 10
 
 for epoch in range(num_of_epochs):  # loop over the dataset multiple times
     epoch_start_time = time.time()

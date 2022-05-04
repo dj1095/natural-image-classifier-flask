@@ -1,10 +1,12 @@
 import os
 from pathlib import Path
 
+import torch
 from flask import Flask, request, jsonify, render_template, redirect, url_for
 from werkzeug.utils import secure_filename
 from PIL import Image
 
+import Model1
 from torch_utils import transform_image, get_prediction
 
 app = Flask(__name__)
