@@ -1,6 +1,6 @@
 # natural-image-classifier-flask
-This project is an image classifier web application  developed in Python, Flask web framework
-#Pre-Requisities:
+<p>This project is an image classifier web application  developed in Python, Flask web framework using natural images dataset from kaggle. It uses Convolution Neural Networks to train and classify the given images based on dataset given. </p>
+# Pre-Requisities: <br/>
 1.Python installed <br/>
 2.Pycharm IDE <br/>
 3.Install Flask <br/>
